@@ -23,12 +23,12 @@ Actor::Actor(float x, float y, float collisionRadius, char icon = ' ', float max
     m_translation = new MathLibrary::Matrix3();
     m_scale = new MathLibrary::Matrix3();
 
-    m_icon = icon;
+    m_icon = ' ';
     setLocalPosition(MathLibrary::Vector2(x,y));
     m_velocity = MathLibrary::Vector2();
-    m_collisionRadius = collisionRadius;
+    m_collisionRadius = 0;
     m_childCount = 0;
-    m_maxSpeed = maxSpeed;
+    m_maxSpeed = 1;
 }
 
 Actor::Actor(float x, float y, float collisionRadius, Sprite* sprite, float maxSpeed = 1) : Actor(x, y, collisionRadius, ' ', maxSpeed)
