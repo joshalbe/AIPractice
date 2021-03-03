@@ -12,6 +12,9 @@
     <Filter Include="Textures">
       <UniqueIdentifier>{b5a36503-1ac1-44c6-bd0b-b12682cdd3b9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{f93078b4-47c1-4551-a134-743c6b46db2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -65,13 +68,13 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Behavior.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SteeringBehavior.h">
-      <Filter>Header Files</Filter>
+      <Filter>AI</Filter>
     </ClInclude>
     <ClInclude Include="SeekBehavior.h">
-      <Filter>Header Files</Filter>
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringBehavior.h">
+      <Filter>AI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
