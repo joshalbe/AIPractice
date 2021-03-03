@@ -1,5 +1,6 @@
 #pragma once
 #include "Actor.h"
+#include "Behavior.h"
 #include <vector>
 
 class Behavior;
@@ -35,6 +36,7 @@ public:
 
     //add the given force to the total force that is being applied to the agent.
     void addForce(MathLibrary::Vector2 force);
+    void addBehavior(Behavior* behavior);
 
 private:
 	MathLibrary::Vector2 m_force;
