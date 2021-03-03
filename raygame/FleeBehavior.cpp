@@ -20,7 +20,7 @@ MathLibrary::Vector2 FleeBehavior::calculateForce(Agent* agent)
 	MathLibrary::Vector2 direction = MathLibrary::Vector2::normalize(m_target->getWorldPosition() - agent->getWorldPosition());
 	//Scale the direction vector by the fleeForce
 	MathLibrary::Vector2 desiredVelocity = direction * m_fleeForce;
-	//Subtract current velocity from desired velocity to find steering force
+	//Subtract desired velocity from current velocity to find steering force
 	MathLibrary::Vector2 steeringForce = agent->getVelocity() - desiredVelocity;
 
 	return steeringForce;

@@ -34,7 +34,7 @@ void Game::start()
 	//Create a new steering behavior and adds it to the enemy
 	SeekBehavior* seek = new SeekBehavior(player);
 	FleeBehavior* flee = new FleeBehavior(player);
-	enemy->addBehavior(flee);
+	enemy->addBehavior(seek);
 
 	//Initialize the scene
 	Scene* scene = new Scene();

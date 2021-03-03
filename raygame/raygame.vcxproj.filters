@@ -53,6 +53,15 @@
     <ClCompile Include="WanderBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PursueBehavior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EvadeBehavior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArriveBehavior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -93,6 +102,15 @@
     </ClInclude>
     <ClInclude Include="WanderBehavior.h">
       <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="PursueBehavior.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadeBehavior.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ArriveBehavior.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
