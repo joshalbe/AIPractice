@@ -110,7 +110,7 @@
       <Filter>AI</Filter>
     </ClInclude>
     <ClInclude Include="ArriveBehavior.h">
-      <Filter>Header Files</Filter>
+      <Filter>AI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
