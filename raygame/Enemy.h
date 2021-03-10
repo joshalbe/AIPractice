@@ -1,8 +1,8 @@
 #pragma once
-#include "Agent.h"
+#include "Character.h"
 
 class Enemy :
-	public Agent
+	public Character
 {
 public:
     
@@ -11,7 +11,7 @@ public:
     /// <param name="icon">The symbol that will appear when drawn</param>
     /// <param name="maxForce">the largest the magnitude of the force vector can be</param>
     Enemy(float x, float y, float collisionRadius, const char* spriteFilePath, 
-        Agent* target, float maxSpeed, float maxForce);
+        Actor* target, float health = 1, float damage = 1, float maxSpeed, float maxForce);
 
     void update(float deltaTime) override;
     virtual Actor* getTarget() { return m_target; }

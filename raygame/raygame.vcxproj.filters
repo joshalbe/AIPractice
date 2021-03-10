@@ -15,6 +15,12 @@
     <Filter Include="AI">
       <UniqueIdentifier>{f93078b4-47c1-4551-a134-743c6b46db2b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AI\Behaviors">
+      <UniqueIdentifier>{5b87f822-f374-4392-b501-c1ddfb46e277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\DecisionTree">
+      <UniqueIdentifier>{0f2045f3-6465-440a-a964-fc1ef91e6c44}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,9 +42,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Bullet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Agent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SeekBehavior.cpp">
@@ -65,6 +68,15 @@
     <ClCompile Include="SimpleEnemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="ABDecision.cpp">
+      <Filter>AI\DecisionTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -85,34 +97,7 @@
     <ClInclude Include="Bullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Agent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Behavior.h">
-      <Filter>AI</Filter>
-    </ClInclude>
-    <ClInclude Include="SeekBehavior.h">
-      <Filter>AI</Filter>
-    </ClInclude>
-    <ClInclude Include="SteeringBehavior.h">
-      <Filter>AI</Filter>
-    </ClInclude>
     <ClInclude Include="Enemy.h">
-      <Filter>AI</Filter>
-    </ClInclude>
-    <ClInclude Include="FleeBehavior.h">
-      <Filter>AI</Filter>
-    </ClInclude>
-    <ClInclude Include="WanderBehavior.h">
-      <Filter>AI</Filter>
-    </ClInclude>
-    <ClInclude Include="PursueBehavior.h">
-      <Filter>AI</Filter>
-    </ClInclude>
-    <ClInclude Include="EvadeBehavior.h">
-      <Filter>AI</Filter>
-    </ClInclude>
-    <ClInclude Include="ArriveBehavior.h">
       <Filter>AI</Filter>
     </ClInclude>
     <ClInclude Include="Character.h">
@@ -120,6 +105,39 @@
     </ClInclude>
     <ClInclude Include="SimpleEnemy.h">
       <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ArriveBehavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadeBehavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="PursueBehavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="FleeBehavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="Behavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="SeekBehavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringBehavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderBehavior.h">
+      <Filter>AI\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="ABDecision.h">
+      <Filter>AI\DecisionTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Decision.h">
+      <Filter>AI\DecisionTree</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
