@@ -62,6 +62,9 @@
     <ClCompile Include="ArriveBehavior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SimpleEnemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -110,6 +113,12 @@
       <Filter>AI</Filter>
     </ClInclude>
     <ClInclude Include="ArriveBehavior.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleEnemy.h">
       <Filter>AI</Filter>
     </ClInclude>
   </ItemGroup>

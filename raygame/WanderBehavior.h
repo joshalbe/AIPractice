@@ -11,7 +11,13 @@ public:
 	void update(Agent* agent, float deltaTime) override;
 
 private:
-	float m_wanderForce;
+	float m_angleChange = 0;
+	float m_circleDistance = 0;
+	float m_circleRadius = 0;
+	float m_wanderAngle = 1;
+	float m_wanderForce = 1;
 
+	MathLibrary::Vector2 m_target;
+	//MathLibrary::Vector2
 };
 

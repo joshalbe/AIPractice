@@ -14,9 +14,10 @@ public:
         Agent* target, float maxSpeed, float maxForce);
 
     void update(float deltaTime) override;
-    void setTarget(Agent* agent) { m_target = agent; }
+    virtual Actor* getTarget() { return m_target; }
+    virtual void setTarget(Actor* agent) { m_target = agent; }
 
 private:
-    Agent* m_target;
+    Actor* m_target;
 };
 
