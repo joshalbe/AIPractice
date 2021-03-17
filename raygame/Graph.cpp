@@ -131,7 +131,8 @@ void Graph::dijkstras(int startX, int startY, int goalX, int goalY)
 	//Create a closed list
 
 	Node* currentNode = start;
-	Node* openList[];
+	std::deque<Node*> open;
+	std::deque<Node*> closed;
 
 	//Add start to the open list
 
