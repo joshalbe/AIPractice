@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "SeekBehavior.h"
 #include "FleeBehavior.h"
+#include "Graph.h"
 
 bool Game::m_gameOver = false;
 Scene** Game::m_scenes = new Scene*;
@@ -36,20 +37,32 @@ void Game::start()
 	FleeBehavior* flee = new FleeBehavior(player);
 	enemy->addBehavior(seek);
 
+	//PATHFINDING SCENE START
+	Graph* graph = new Graph(10, 10, 5, 20);
+	graph->setWorldPostion({ 2,2 });
+	graph->BFS(0, 0, 9, 0);
+	Scene* pathFinding = new Scene();
+	pathFinding->addActor(graph);
+	//PATHFINDING SCENE END
+
 	//Initialize the scene
 	Scene* scene = new Scene();
 	scene->addActor(player);
 	scene->addActor(enemy);
 	addScene(scene);
 	SetTargetFPS(60);
+
+	
 }
 
 void Game::update(float deltaTime)
 {
-	for (int i = 0; i < m_sceneCount; i++)
+	/*for (int i = 0; i < m_sceneCount; i++)
 	{
 		m_scenes[i]->update(deltaTime);
-	}
+	}*/
+
+	getCurrentScene()->update(deltaTime);
 }
 
 void Game::draw()

@@ -69,7 +69,7 @@ public:
 
 private:
 	void start();
-	void update(float delaTime);
+	void update(float deltaTime);
 	void draw();
 	void end();
 
