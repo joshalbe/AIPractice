@@ -14,7 +14,8 @@ public:
 
 	Node* getNode(int xPos, int yPos);
 
-	void dijkstras(int startX, int startY, int golaX, int goalY);
+	void dijkstras(int startX, int startY, int goalX, int goalY);
+	void aStar(int startX, int startY, int goalX, int goalY);
 
 private:
 	void createGraph(int nodeSize, int nodeSpacing);

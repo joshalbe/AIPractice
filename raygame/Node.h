@@ -13,6 +13,9 @@ public:
 	MathLibrary::Vector2 graphPosition;
 	int color = 0xFFFFFFFF;
 	int size = 1;
+	float gScore;
+	float hScore;
+	float fScore;
 	bool visited;
 	void draw() override;
 	void update(float deltaTime) override;
